@@ -416,9 +416,64 @@ td {
 font-style: italic;		
 }
     </script>
+
+<!---------top button------------->
+<style>
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: white;
+}
+</style>
+
+
+<!-------end top button ------------------->
+
+
 </head>
 </head>
-<body class="hide-widgets-menu">
+<body class="hide-widgets-menu" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+<!---------top button-------------->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://www.dropbox.com/s/atq2jlrytvbh2o6/1632974345802.png?raw=1" alt="TOP" width="40" height="40" class="by" title="Top" align="center"> </button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	<!-------end top button ------------------->
     <script>
         Site.changeMenuHiddenState();
     </script>
@@ -1748,12 +1803,12 @@ font-style: italic;
                   <tr>
                     <td><p><font color="#04527D"><strong><font color="#ff6347"><br>
                       <br>
-                      Brief History:</font></strong><br>
+                      Brief History:</font></strong><br><br>
                       The surname <strong><i>Peres Bhatt</i></strong> was originally Bhat - the priestly class in the Konkana community. According to legend, some members of this priestly class were converted to Catholicism by Portuguese missionaries - probably in the 18th century.Their godfathers were the Dukes of Peres, whose surnames has been adopted after conversion.
                     
                     </font></p>
                       <br>
-                      <p><font color="#04527D"><strong><font color="#ff6347">Note:</font></strong> Viewport may not be responsive <i>(fit to screen)</i> to all screen resolution, For best experience either zoom in or zoom out to fit device width. 
+                      <p><font color="#04527D"><strong><font color="#ff6347">Note:</font></strong><br><br> Viewport may not be responsive <i>(fit to screen)</i> to all screen resolution, For best experience either zoom in or zoom out to fit device width. 
 						<br> <br> <strong>Tree-View Menu Button</strong>  at the top of the page navigates to a window providing a hierarchial list of Peres Bhatt descendants. The left pane that contains the tree is of non scrollale type. So make use of right most side of the page to scroll the site. </font></p>
                       <br>
                       <br>
@@ -1761,11 +1816,11 @@ font-style: italic;
 <table style="width: 100%;">
 <tbody>
 <tr>
-<td style="width: 100%;" > <img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" alt="Photo Gallery" width="150" height="150" /></td></tr>
+<td style="width: 100%;" > <img src="https://www.dropbox.com/s/asvp4a4g952ah3p/1623047996193.png?raw=1" alt="Photo Gallery" width="180" height="180" /></td></tr>
 	<tr>
 <td style="width: 100%;">
 <p>
-	<h2><font color= #0C2E45><strong>Golden Memories</strong></font></h2><br>
+	<h2><font color= #0C2E45><strong>Golden Memories</strong></font></h2>
 <i>“Nothing is ever really lost as long as we remember it.”</i><br><br>
 "Golden Memories" is an Album, a collection of photos from Peres Bhatt family where the memories we've made along the way are lived forever.<br>
 Our existence may be so ephemeral, but memories last forever.<br><br>
@@ -1786,10 +1841,9 @@ Our existence may be so ephemeral, but memories last forever.<br><br>
 	<tr>
 <td style="width: 100%;">
 <p>
-	<h2><font color= #0C2E45><strong>Colour Memories</strong></font></h2>
-"Colour is what makes memories alive".<br><br><strong>"Colour Memories"</strong>  A treasure Home of Cards, Cherishing the moments of past.<br>
+	<h2><font color= #0C2E45><strong>Sweet Reminiscence</strong></font></h2>
+<i>"Life isn't Perfect, but it has perfect Moments & Memories that tells stories of our family"</i><br><br>"Sweet Reminiscence" is an Album of cards from various events of Peres Bhatt family, Recollecting the past moments of our family and bringing memories alive.<br><br>
 A garden of sweet memories, treasured always in our thoughts, Forever in our hearts, Commemorating the moments of yesteryear.<br><br>
-<i>"Life isn't Perfect, but it has perfect moments that tell our story"</i><br><br>
 <a href="https://photos.app.goo.gl/YpiX32xSaJ4NHCTT9" target="_blank">View Card Collection..</a>
 </p>
 </td>
