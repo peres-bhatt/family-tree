@@ -78,7 +78,7 @@ dA[x++] = "00000528 Blossom (Peres Bhatt) Pinto's Birthday <br> Aedan John D'Sou
 dA[x++] = "00000529 Joshua Henry Peres Bhatt's Birthday  <br> Ulrica Pinto's Birthday <br><br>";
 dA[x++] = "00000530 Delrin D'Mello's Birthday<br> Denzil Felix D'Mello's Birthday <br><br>";
 dA[x++] = "00000531 Jonah Aloysius Peris Bhatt's Birthday (1985) <br><br>";
-dA[x++] = "00000602 Samatha Dharmaraj's Birthday <br> Nancy Rita D'Mello's Death Anniversary (2006) <br><br>";
+dA[x++] = "00000602 Samatha Benedict's Birthday <br> Nancy Rita D'Mello's Death Anniversary (2006) <br><br>";
 dA[x++] = "00000610 Merwin Pais's Birthday <br> Lt. Neville Rego's Death Anniversary (2010) <br><br>";
 dA[x++] = "00000612 Winston Pais's Birthday <br><br>";
 dA[x++] = "00000616 Deral Robbert D'Mello's Death Anniversary 2016) <br> Grathin's Birthday <br><br>";
@@ -152,6 +152,7 @@ dA[x++] = "00001215 Rita (Madtha) Peres Bhatt's Birthday <br><br>";
 dA[x++] = "00001216 Jerome Salvador Rego's Death Anniversary (1968) <br><br>";
 dA[x++] = "00001219 Yvone (Lobo) Pinto's Birthday <br><br>";
 dA[x++] = "00001226 Lt. Nancy Rita (Peres Bhatt) D'Mello's Birthday  (1938) <br> Jacintha Pramila (Monterio) Peres Bhatt's Birthday <br> Arun William - Jyothsna Winifred (Peris Bhatt) D'Souza Wedding Anniversary (2008) <br><br>";
+dA[x++] = "00001229 Mukesh - Samatha (Benedict)'s Wedding Anniversary (2021) <br><br>";
 dA[x++] = "00001229 Joshua Henry - Sonia Monica (Fernandes) Peris Bhatt's Wedding Anniversary (2008) <br><br>";
 // dA[x++] = "20060610 New Event Calendar Started today";
 
