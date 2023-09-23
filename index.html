@@ -195,6 +195,9 @@ dA[x++] = "00000101 New Year";
 </style>
 
 
+
+
+
 <!-----Footer------->
 <style type="text/css">
   .limg {
@@ -211,11 +214,78 @@ dA[x++] = "00000101 New Year";
 }
 </style>
 
+<!-----Jump to top Button------->
 
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #FAD7A0;
+  color: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 100%;
+  
+}
+
+#myBtn img{
+ vertical-align: middle;
+}
+
+#myBtn:hover {
+  background-color: #D5D8DC;
+}
+</style>
+
+<!-------------------------------------->
     
 </head>
 
+
+
+
 <body ONLOAD="clockWork"  bgcolor="black" >
+
+<!---------------Jump to top------------->
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="https://static.thenounproject.com/png/636009-200.png" alt="buttonpng" border="0" style= " width:50px; height:50px; text-align: center:;  "/></button>
+
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
     
     <!-----------LOADER ANIMATION------->
     <div class="se-pre-con"></div>
@@ -2206,7 +2276,11 @@ dA[x++] = "00000101 New Year";
         
         
         <div class="spectrum-background"><br><br> </div>
-    
+
+<!-------------->
+
+<div style="background-color:black;color:white;padding:10px">Attention:</div>
+<div style="background-color:lightgrey;padding:30px 30px 30px">The <strong>Misuse of data and images </strong> from the website is not permitted. Please refrain from any unauthorized use of the data and images in any way that may violate the term of use.</div><br><br><br><br>
        
        
 <!-------------------Footer---------------------->        
@@ -2214,7 +2288,7 @@ dA[x++] = "00000101 New Year";
     <div class="container py-3">
         <div class="row m-3">
 
-            <font color="#A9A9A9"> Misuse of data and images from the website is not permitted. Please refrain from any unauthorized use of the data and images in any way that may violate the term of use.<br><br> </font><br>
+
 
           <div style= "padding: 5px;  width: 100px; display: inline-block;">
 
@@ -2222,6 +2296,7 @@ dA[x++] = "00000101 New Year";
           </div>
 
             <div style="padding: 5px;  width: 500px; display: inline-block;" class="ltxt col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 my-auto">
+                         
                 <img src="https://www.dropbox.com/s/tlwd2d5459btdws/1631842701606.png?raw=1" align="center" alt="EMANJOH" class="img-fluid  w-25"><br><font color="#A9A9A9"> Jonah Aloysius Peris Bhatt </font>
             </div>
 
@@ -2234,6 +2309,8 @@ dA[x++] = "00000101 New Year";
         </div>
     </div>
 </div>    </div>
+
+  
 
 </body>
 
