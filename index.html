@@ -227,7 +227,7 @@ dA[x++] = "00000101 New Year";
   font-size: 20px;
   border: none;
   outline: none;
-  background-color: #FAD7A0;
+  background-color: #D5D8DC;
   color: none;
   cursor: pointer;
   padding: 2px;
@@ -241,12 +241,58 @@ dA[x++] = "00000101 New Year";
 
 #myBtn:hover {
   background-color: #D5D8DC;
+opacity: 0.9;
 }
 </style>
 
-<!-------------------------------------->
-    
+<!-----------------feedback------------
+    <style>
+
+      #box {
+  margin: auto;
+  width: 100%;
+  border: 0px solid black;
+  padding: 0px;
+
+ background-color: solid white;  
+      }
+    </style>      --------->
+
+
+<!------target new page feedback----->
+
+<script type="text/javascript">
+function submitForm()
+{
+document.form1.target = "myActionWin";
+window.open("","myActionWin","width=500,height=500,toolbar=0");
+document.form1.submit();
+}
+</script>
+
+
+<!-----------------------formcarry style-------------->
+
+<link rel="stylesheet" href="formcarry-form.css" />
+
+
+
+<!--------------------------------->
+
+
+
 </head>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -281,6 +327,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
+
+
 
 
 
@@ -2273,14 +2321,57 @@ function topFunction() {
                     </div>
                 </div>
         </section>
+
+ 
         
         
         <div class="spectrum-background"><br><br> </div>
 
 <!-------------->
 
+
+<!-- 👇️ will load page content in this div  
+    <div id="box"></div> 
+
+    <script>
+    const box = document.getElementById('box');
+
+
+box.innerHTML =
+  '<object  type="text/html" data="https://peres-bhatt.github.io/feedback.github.io/" width="100%" height="600px style="overflow:auto;border:5px ridge blue"</object>';
+
+    </script>
+
+</div>          -->
+
+<!------feedback---->
+        
+   <div class="formcarry-container">
+
+
+<form name="form1" action="https://formcarry.com/s/Ed-JON03lV" method="POST" class="formcarry-form" accept-charset="UTF-8">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="fullName" required />
+
+        <label for="email">Your Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+        <button type="submit" name="btnSubmit" onclick="submitForm()">Send</button>
+
+      </form>
+    </div>
+          <br><br><br>                   
+
+<!------warning---->
 <div style="background-color:black;color:white;padding:10px">Attention:</div>
-<div style="background-color:lightgrey;padding:30px 30px 30px">The <strong>Misuse of data and images </strong> from the website is not permitted. Please refrain from any unauthorized use of the data and images in any way that may violate the term of use.</div><br><br><br><br>
+<div style="background-color:none;padding:30px 30px 30px">
+
+The <strong>Misuse of data and images </strong> from the website is not permitted. Please refrain from any unauthorized use of the data and images in any way that may violate the term of use.<br><br>
+
+
        
        
 <!-------------------Footer---------------------->        
@@ -2290,7 +2381,7 @@ function topFunction() {
 
 
 
-          <div style= "padding: 5px;  width: 100px; display: inline-block;">
+          <div style= "padding: 5px;  width: 100px; display: inline-block; align: center; text-align:center;">
 
             <img  src="https://www.dropbox.com/s/0fh0grgmvjnmadz/1634186403676.png?raw=1">
           </div>
@@ -2300,17 +2391,23 @@ function topFunction() {
                 <img src="https://www.dropbox.com/s/tlwd2d5459btdws/1631842701606.png?raw=1" align="center" alt="EMANJOH" class="img-fluid  w-25"><br><font color="#A9A9A9"> Jonah Aloysius Peris Bhatt </font>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 my-2">
-                
-                 
-
-       
-           
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 my-2">  
         </div>
     </div>
-</div>    </div>
+</div>    </div> 
 
   
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
