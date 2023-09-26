@@ -8,9 +8,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+
+
+
    
  <title>PERES BHATT G-TREE</title>
   <link rel="icon" href="https://www.dropbox.com/s/irehp4iclngp3fi/1631674473756.png?raw=1" type ="image/x-icon">
+
+
+
 
 <!----Loader animation------>
 <style type="text/css">/* Paste this css to your style sheet file or under head tag */
@@ -29,6 +35,8 @@ if it's not present, don't show loader */
   opacity: 60%
 }
   </style>
+  
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><script>
   //paste this code under head tag or in a seperate js file.
   // Wait for window load
@@ -60,40 +68,60 @@ if it's not present, don't show loader */
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+
  
 
     
     <!------table---------->
-    	<style type="text/css">
-.TFtable {
-  max-width: 100%;
+<style>
+* {
+  box-sizing: border-box;
 }
 
-.TFtable tr:nth-child(even) {
-  background-color: #1a1110;
+#myInput {
+  background-image: url('https://nebula.wsimg.com/1d2a73bf39dfdc0183e2a4c617ca0258?AccessKeyId=91CBBA8DAEED4655B5DD&disposition=0&alloworigin=1');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  background-color: #ffffe6;
 }
 
- /* .TFtable tr:nth-child(odd){ 
-    background: #969696;#525252  */
-
-.TFtable th {
-  background-color:#28282B;
-  color: #FF5733;
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
 }
 
-.TFtable th,
-td {
+#myTable th, #myTable td {
   text-align: left;
-  padding: 0.5em 1em;
+  padding: 12px;
+  color: white;
 }
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #4d2e00;
+}
+.grid-container {
+overflow-y: auto;
+height: 600px;
+}
+
 </style>
 
 
-    <!--------------------->
 
 
-
-
+    <!----------intro background----------->
 
     <style>
         .bg-04202f{
@@ -124,6 +152,11 @@ td {
         }
        
     </style>
+
+
+
+
+
     
     <!--------glow-------->
     
@@ -133,6 +166,11 @@ glow {
   text-shadow: 2px 2px 4px #000000;
 }
 </style>
+
+
+
+
+
 
 <!----------hover anim--------------->
  <style>
@@ -164,6 +202,11 @@ a:hover {
 }
 </style>
 
+
+
+
+
+
 <!------event calender--------->
 <script type="text/javascript" src="event.js">
 var todaybg = '#99cccc'; // current selected date background
@@ -173,12 +216,22 @@ var noMessage = 'No event messages to display for today';
 dA[x++] = "00000101 New Year";
 </script>
 
+
+
+
+
+
+
 <!------scale-------->
  <style> 
 .zoom {
     zoom: 0.78;
 }
 </style>
+
+
+
+
 
 
 <!------Spectrum background------>
@@ -193,6 +246,7 @@ dA[x++] = "00000101 New Year";
     background-blend-mode: screen;
 }
 </style>
+
 
 
 
@@ -213,6 +267,12 @@ dA[x++] = "00000101 New Year";
   vertical-align: middle;
 }
 </style>
+
+
+
+
+
+
 
 <!-----Jump to top Button------->
 
@@ -245,6 +305,12 @@ opacity: 0.9;
 }
 </style>
 
+
+
+
+
+
+
 <!-----------------feedback------------
     <style>
 
@@ -259,6 +325,11 @@ opacity: 0.9;
     </style>      --------->
 
 
+
+
+
+
+
 <!------target new page feedback----->
 
 <script type="text/javascript">
@@ -271,38 +342,67 @@ document.form1.submit();
 </script>
 
 
+
+
+
+
+
 <!-----------------------formcarry style-------------->
 
 <link rel="stylesheet" href="formcarry-form.css" />
 
 
 
+
+
+<!--------------event calendar table search------------------->
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
 <!--------------------------------->
+<style>
 
-
+</style>
 
 </head>
 
 
-
-
-
-
-
-
-
-
-
-
+<!--------------------------------->
+<!--------------------------------->
+<!--------------------------------->
+<!--------------------------------->
 
 
 
 <body ONLOAD="clockWork"  bgcolor="black" >
 
+
+
+
+
 <!---------------Jump to top------------->
 
-
 <button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="https://static.thenounproject.com/png/636009-200.png" alt="buttonpng" border="0" style= " width:50px; height:50px; text-align: center:;  "/></button>
+
 
 
 
@@ -332,16 +432,18 @@ function topFunction() {
 
 
 
-
-
     
     <!-----------LOADER ANIMATION------->
     <div class="se-pre-con"></div>
 
+
+
+
     <!-------------------------------->
-    
-<div class="header">
+ 
+<div class="header" >
   <nav class="navbar navbar-expand-lg navbar-dark bg-black position-absolute top-0 w-100 z-10">
+ 
     <div class="container">
       <a class="navbar-brand" href="index.php">
         
@@ -353,7 +455,6 @@ function topFunction() {
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
 
           <li class="nav-item ">
             <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="GTREE.html" >G-Tree</a>
@@ -376,6 +477,12 @@ function topFunction() {
               <span class="underline_header_anime"></span>
               </li>
 
+           <li class="nav-item ">
+            <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#contact">Contact Me</a>
+              <span class="underline_header_anime"></span>
+              </li>
+
+
                <li class="nav-item active">
             <a class="nav-link text-uppercase titilium text-white d-inline-block pb-0" href="#history">About</a>
               <span class="underline_header_anime"></span>
@@ -386,11 +493,12 @@ function topFunction() {
   </nav>
 </div>
 
+
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
-  </script>    <div class="snap-container">
+  </script>    <div class="snap-container" >
         <section>
             <div class="owl-carousel owl-main-banner-carousel owl-theme">
                 <div class="about-main-banner-section-one">
@@ -416,6 +524,11 @@ function topFunction() {
             </div>
         </section>
 
+
+
+
+
+
   <!-----------history------------------->      
         <section class="bg-black py-5 text-white">
             <div class="container" id="history">
@@ -431,7 +544,14 @@ function topFunction() {
                 </div>
             </div>
         </section>
- <!-----------NOTE------------------>
+
+
+
+
+
+
+ <!-----------INTRO------------------>
+
   <section class="bg-black py-5 text-white">
             <div class="container">
                 <div class="row">
@@ -442,6 +562,13 @@ function topFunction() {
                         <p class="myriad fw-light text-lg lh-base mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
                           <i> "Let's Discover our Roots" </i> 
                         </p>
+
+
+
+
+
+   <!-----------ABOUT------------------>
+                        
   <p class="myriad fw-light text-lg lh-base mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"><strong>Peres Bhatt Generation Tree </strong> provides a hierarchial list of Peres Bhatt descendants in a Tree View form. This family tree helps us to know our distant family members of our family. Apart from  increasing the bond with our family members, it also helps us to understand the blood relationships.</p>   
 
   <p class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
@@ -454,6 +581,12 @@ function topFunction() {
         </section>
         
         <div class="spectrum-background"><br><br> </div>
+
+
+
+
+
+
         
  <!-------------Golden Memories------------->       
           
@@ -486,8 +619,12 @@ function topFunction() {
             </div> </div>
         </section> 
        <div class="spectrum-background"><br><br> </div>
+
+
+
         
  <!-------Sweet Reminiscence---------->
+ 
  <section class="bg-04202f py-5 text-white">
             <div class="container">
                 <div class="row">
@@ -514,1808 +651,278 @@ function topFunction() {
                 </div>
             </div> </div>
         </section>
-<!------------------->  
 
 
-                  <div class="spectrum-background"><br><br> </div>
-<section class="bg-black text-white py-3" id="Kalendar">
-                  <div align="center" class="text-white text-3xl oswald" data-aos="fade-up" data-aos-duration="500" >EVENT CALENDER</div>
- </section>       <br> <br>          
-                  <center><div id="calendar" class="zoom"></div></center>
 
-<br> <br>    
+
+
+
+
+
+
+<!----------------EVENT CALENDAR-------------->  
+
+ <div class="spectrum-background"><br><br> </div>
+<section class="" id="Kalendar"> 
+                  <div style="background-color:black;color:white;padding:10px;"> 
+
+<strong><h3>&nbsp; &nbsp; &nbsp;Event Calendar:</h3></strong></div>
+
+<div class="spectrum-background"><br><br> </div>
+ </section>   <br><br>
+
+
+                  <center><div id="calendar" class="zoom"></div></center>  <br> <br> 
+                  
+   <div class="spectrum-background"><br><br> </div>
         
-        <section class="bg-black text-white py-3">
-            <div class="container" id="calendar">
+        <section class="bg-white  py-3">
+            <div class="container" id="calendar" style= "background-color:#606060ff">
                
                 <div class="row my-1 my-sm-1 my-md-1 my-lg-5 my-xl-5 my-xxl-5">
                     <div class="col-11 mx-auto g-0 mb-3">
                         
                     </div>
                     
-                        <div class="myriad fw-light text-base lh-lg mb-1 text-efefef" data-aos="fade-up" data-aos-duration="500">
-
-
-
-                     <table class="TFtable">     
-
-
-                  <tr>
-                  <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 1st January </th>
-                  </tr>
-                  <tr>
-                    <td> Juliet D'Mello 's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Vandana (Carlo) D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 4th January </th>
-                  </tr>
-                  <tr>
-                    <td> Marvin Coelho's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 5th January </th>
-                  </tr>
-                  <tr>
-                    <td> Lavina (D'Souza) Peres's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 6th January </th>
-                  </tr>
-                  <tr>
-                    <td> Jerome Augustine Peres Bhatt wedded Joyce Rebello </td>
-                  </tr>
-                  <tr>
-                    <td> Joseph Antony Peres Bhatt wedded  Benedicta Fernandes (1969) </td>
-                  </tr>
-                  <tr>
-                    <td> Marina (Pinto) Gaonkar's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 7th January </th>
-                  </tr>
-                  <tr>
-                    <td> Sheela Emiliana (D'Souza) Peris Bhatt's Birthday (1988 | Soraba, Shimogga)</td>
-                  </tr>
-                  <tr>
-                    <td>Jonah Aloysius Peris Bhatt wedded Sheela Emiliana D'Souza (2016 | St. Sebastian church, Bendur, Mangalore) </td>
-                  </tr>
-                  <tr>
-                    <td> Lt. Doris Mary Peres Bhatt's Birthday (1891)</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th January </th>
-                  </tr>
-                  <tr>
-                    <td> Eric J. F. A. Lobo 's Death Anniversary (2020 | Mangaluru) </td>
-                  </tr>
-                  <tr>
-                    <td> Keith Jude Rebello wedded Annete Priya D'Mello (2018 | St. Sebastian Church, Bendur, Mangaluru) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 9th January </th>
-                  </tr>
-                  <tr>
-                    <td> Basil Gration D'Mello's Death Anniversary (2006 | Modankap, Bantwal) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th January </th>
-                  </tr>
-                  <tr>
-                    <td> Arun William D'Souza's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Allwyn Lobo wedded Lydia Pinto (1966) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 12th January </th>
-                  </tr>
-                  <tr>
-                    <td> Dencia Jiya D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 18th January </th>
-                  </tr>
-                  <tr>
-                    <td> Fr.Julius Rasquinha's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Tanushri (Pillai) Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th January </th>
-                  </tr>
-                  <tr>
-                    <td> Rajiv Basil's Death anniversary (1958) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd January </th>
-                  </tr>
-                  <tr>
-                    <td> Mary (Peres Bhatt) Rasquinha's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th January </th>
-                  </tr>
-                  <tr>
-                    <td> Alex Rodrigues's Death Anniversary (1996) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 30th January </th>
-                  </tr>
-                  <tr>
-                    <td> Susan (Rasquinha) Quadras's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd February </th>
-                  </tr>
-                  <tr>
-                    <td> Dionysius Francis D'Mello wedded Juliet D'Mello </td>
-                  </tr>
-                  <tr>
-                    <td> Lt. Joseph Antony (Joe) Peres Bhatt's Birthday (1939) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 3rd February </th>
-                  </tr>
-                  <tr>
-                    <td> Ronald Pinto's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 5th February </th>
-                  </tr>
-                  <tr>
-                    <td> Ranee Glaphyra Peres Bhatt's Birthday (1942) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th February </th>
-                  </tr>
-                  <tr>
-                    <td> Titus Antony Peres Bhatt wedded Tanushri Pillai (2018 | Holy Rosario Cathedral, Mangalore) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 9th February </th>
-                  </tr>
-                  <tr>
-                    <td> Leena (Crasta) Patrao's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th February </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Jerome Augustine Peres Bhatt's Birthday (1943) </td>
-                  </tr>
-                  <tr>
-                    <td> Allan Lobo wedded Tanya D'Souza </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-                   <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th February </th>
-                  </tr>
-                  <tr>
-                    <td> Dr. Peter & Daisy Carmel (D'Mello) Fernandes's Wedding Anniversary </td>
-                  </tr>
-                  <tr>
-                    <td> Mahima Fernandes's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>                 
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 12th February </th>
-                  </tr>
-                  <tr>
-                    <td> Peter Fernandes wedded Daisy Carmel D'Mello </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th February </th>
-                  </tr>
-                  <tr>
-                    <td> Demian Antony D'Mello wedded Vandana Carlo </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 16th February </th>
-                  </tr>
-                  <tr>
-                    <td> Deon D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 17th February </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. (Sr. Harriet) Irene Josephine Peres Bhatt's Birthday	(1944) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 21st February </th>
-                  </tr>
-                  <tr>
-                    <td> Samuel Pinto's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 24th February </th>
-                  </tr>
-                  <tr>
-                    <td> Gilbert Philip Peres Bhatt's Death anniversary (1987) </td>
-                  </tr>
-                  <tr>
-                    <td> Magdalen Peres Bhatt's Death anniversary (1897) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th February </th>
-                  </tr>
-                  <tr>
-                    <td> Lydia (Pinto) Lobo's Death anniversary (2008) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd March </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Basil Gration D'Mello's Birthday	(1931)</td>
-                  </tr>
-                  <tr>
-                    <td> Lt. Harrold Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 3rd March </th>
-                  </tr>
-                  <tr>
-                    <td> Marian Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th March </th>
-                  </tr>
-                  <tr>
-                    <td> Benny (Peres Bhatt) Lobo's Death anniversary (1988) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 13th March </th>
-                  </tr>
-                  <tr>
-                    <td> Nayana (Rasquinha) Naik's Birthday </td>
-                  </tr>
-                                    <tr>
-                    <td> Percival Lobo's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 14th March </th>
-                  </tr>
-                  <tr>
-                    <td> Charles Emmanuel Noronha's Death anniversary (1950 | Chennai, Tamil Nadu.) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th March </th>
-                  </tr>
-                  <tr>
-                    <td> Winifred Lorna (D'Souza) Peres Bhatt's Birthday (1920) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 17th March </th>
-                  </tr>
-                  <tr>
-                    <td> Nicholas John Peres Bhatt's Death anniversary (1922) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 18th March </th>
-                  </tr>
-                  <tr>
-                    <td> Gladson Joseph Peres Bhatt's Birthday (1985) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th March </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Allwyn Lobo's Birthday (1937) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 21st March </th>
-                  </tr>
-                  <tr>
-                    <td> Priestly Ordination of Brian Peres Bhatt, OSB (2002 | Vijayawada, A.P) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd March </th>
-                  </tr>
-                  <tr>
-                    <td> Mercy (Peres Bhatt) Patrao's death Anniversary  (2020) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 1st April </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Monica Emerciana (Suares) Peres Bhatt's Birthday (1882) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd April </th>
-                  </tr>
-                  <tr>
-                    <td> Jude Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Joanna Peres Bhatt's Birthday	(2020)</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 3rd April </th>
-                  </tr>
-                  <tr>
-                    <td> Monica Emerciana (Suares) Peres Bhatt's death Anniversary  (1936) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 5th April </th>
-                  </tr>
-                  <tr>
-                    <td> Fabian Peres Bhatt's death Anniversary  (2022 | Our lady of Holy Rosary Cemetery, Jeppu, Mangalore)</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th April </th>
-                  </tr>
-                  <tr>
-                    <td> Doris Mary Noronha's Death anniversary (1933) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 13th April </th>
-                  </tr>
-                  <tr>
-                    <td> Fr. Brain Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 17th April </th>
-                  </tr>
-                  <tr>
-                    <td> Allwyn Lobo's Death anniversary (2007) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th April </th>
-                  </tr>
-                  <tr>
-                    <td> Jyothsna Winifred (D'Souza) Peres Bhatt's Birthday (1981)</td>
-                  </tr>
-                  <tr>
-                    <td> Gladwin Gilbert Peres Bhatt's Birthday </td>
-                  </tr>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 21th April </th>
-                  </tr>
-                  <tr>
-                    <td> Letita Lobo's Birthday (1899) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th April </th>
-                  </tr>
-                  <tr>
-                    <td> Bennet Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 30th April </th>
-                  </tr>
-                  <tr>
-                    <td> Ronald Pinto wedded Blossom Peres Bhatt</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 1st May </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Gilbert Philip Peres Bhatt's Birthday (1915) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd May </th>
-                  </tr>
-                  <tr>
-                    <td> Sr. Harriet's (Irene Josephine Peres Bhatt) death Anniversary (2012)</td>
-                  </tr>
-                  <tr>
-                    <td> Alex Rodrigues wedded Philomena (1960) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 4th May </th>
-                  </tr>
-                  <tr>
-                    <td> Aavin lobo wedded Rainal D'Souza </td>
-                  </tr>
-                  <tr>
-                    <td> Nellie Monica lobo's Birthday (1914) </td>
-                  </tr>
-                  <tr>
-                    <td> Ranee Glaphyra Norhona's death Anniversary (2020 | Bengaluru) </td>
-                  </tr>
-                  <tr>
-                    <td> Martin Antony Rosario Sequeira Kamath's death Anniversary (1982 | Kolkata, West Bengal) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th May </th>
-                  </tr>
-                  <tr>
-                    <td> Bennet Peres Bhatt wedded Jacintha Pramila Monterio	(2019 | Holy Rosario Cathedral, Mangalore) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th May </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Fabian Peres Bhatt wedded Flavian Lobo (1981 | Rosario Cathedral, Mangalore) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 13th May </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Deral Robert D'Mello's Birthday (1966) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 14th May </th>
-                  </tr>
-                  <tr>
-                    <td> Jaylon Simon Peres Bhatt's Birthday	(2018 | Shimogga)</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th May </th>
-                  </tr>
-                  <tr>
-                    <td> Mario Pinto wedded Rishika Rupam </td>
-                  </tr>
-                  <tr>
-                    <td> Gilbert Philip Peres Bhatt wedded Winnifred Lorna D'Souza (1941) </td>
-                  </tr>
-                  <tr>
-                    <td> Anthony Noronha's Death anniversary (2006 | Bengaluru) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 20th May </th>
-                  </tr>
-                  <tr>
-                    <td> Joel Gaonkar's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 24th May </th>
-                  </tr>
-                  <tr>
-                    <td> Maxium Barboza wedded Anita </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th May </th>
-                  </tr>
-                  <tr>
-                    <td> Maya Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 26th May </th>
-                  </tr>
-                  <tr>
-                    <td> Joyce (Rebello) Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Aileen Jean Dsouza's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 27th May </th>
-                  </tr>
-                  <tr>
-                    <td> Mabel (Pinto) Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Lawrence Peres Bhatt wedded Juliana D'Cunha (1980 | Our Lady of Immaculate Conception, Urwa, Mangalore) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th May </th>
-                  </tr>
-                  <tr>
-                    <td> Blossom (Pinto) Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Aedan John Dsouza's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 29th May </th>
-                  </tr>
-                  <tr>
-                    <td> Joshua Henry Peris Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Ulrica Pinto's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 30th May </th>
-                  </tr>
-                  <tr>
-                    <td> Delrin D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Denzil Felix D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 31st May </th>
-                  </tr>
-                  <tr>
-                    <td>Jonah Aloysius Peris Bhatt's Birthday  (1985)</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd June </th>
-                  </tr>
-                  <tr>
-                    <td> Samatha Benedict's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Nancy Rita D'Mello's Death Anniversary (2006 | Modankap, Bantwal) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th June </th>
-                  </tr>
-                  <tr>
-                    <td> Merwin Pais's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Lt. Neville Rego's Death Anniversary (2010) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 12th June </th>
-                  </tr>
-                  <tr>
-                    <td> Winston Pais's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 16th June </th>
-                  </tr>
-                  <tr>
-                    <td> Deral Robert D'Mello's Death anniversary (2016 | Modankap, Bantwal) </td>
-                  </tr>
-                  <tr>
-                    <td> Grathin's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 17th June </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Anna Joanna Patrao's Birthday (1883) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th June </th>
-                  </tr>
-                  <tr>
-                    <td> Titus Antony Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 21th June </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Benny (Peres Bhatt) Lobo's Birthday (1913) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd June </th>
-                  </tr>
-                  <tr>
-                    <td> Delmon D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th June </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Cosmos Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Lt. Francis Augustine Rego's Death anniversary (1949) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 27th June </th>
-                  </tr>
-                  <tr>
-                    <td> Derrick John D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th June </th>
-                  </tr>
-                  <tr>
-                    <td> Prathik Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 5th July </th>
-                  </tr>
-                  <tr>
-                    <td> Daisy Carmel D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th July </th>
-                  </tr>
-                  <tr>
-                    <td> Mehul Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Lt. Alphonso Joseph Rasquinha's birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th July </th>
-                  </tr>
-                  <tr>
-                    <td> Jerome Augustine Peres Bhatt's death Anniversary (2012 | St. Anthony Church Cemetery, Ujire, Karnataka) </td>
-                  </tr>
-                  <tr>
-                    <td> Michael Gojer's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 12th July </th>
-                  </tr>
-                  <tr>
-                    <td> John Gilbert Bernard Rego's Birthday (1897) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th July </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Henry Pinto's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd July </th>
-                  </tr>
-                  <tr>
-                    <td> Daniel Pinto's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th July </th>
-                  </tr>
-                  <tr>
-                    <td> Winnifred Lorna (D'Souza) Peres Bhatt's Death anniversary (1996) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th July </th>
-                  </tr>
-                   <tr>
-                    <td> Celine Rego's Death anniversary (2009 | Mumbai) </td>
-                  </tr>
-                  <tr>
-                    <td> Lt. Alex Rodrigues's Birthday  (1928) </td>
-                  </tr>
-                  <tr>
-                    <td> Elsie Rose Teresa Noronha's Death anniversary  (2018 | Urwa Cemetery, Mangalore) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 29th July </th>
-                  </tr>
-                  <tr>
-                    <td> Vernon Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 6th August </th>
-                  </tr>
-                  <tr>
-                    <td> Anita (Peres Bhatt) Barboza's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 7th August </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Lydia (Pinto) Lobo's Birthday (1941) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th August </th>
-                  </tr>
-                  <tr>
-                    <td> Dominic John D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 9th August </th>
-                  </tr>
-                  <tr>
-                    <td> Lawrence Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Denika D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th August </th>
-                  </tr>
-                  <tr>
-                    <td> Prakash Serao's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Winnifred (Sequeira) Peres Bhatt's Death Anniversary </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th August </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Celine Pinto's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 13th August </th>
-                  </tr>
-                  <tr>
-                    <td> Sr. Sabitha Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Maxium Barboza's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> John Gratian Peres Bhatt's Birthday (1904) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 14th August </th>
-                  </tr>
-                  <tr>
-                    <td> Dexia D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th August </th>
-                  </tr>
-                  <tr>
-                    <td> Ignatius Cajetan Peres Bhatt's Death anniversary (1877) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 26th August </th>
-                  </tr>
-                  <tr>
-                    <td> Sangeetha Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 31st August </th>
-                  </tr>
-                  <tr>
-                    <td> Magdalen D'Souza's Birthday (1829) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 2nd September </th>
-                  </tr>
-                  <tr>
-                    <td> Charles Rego's Birthday (1935 | Bengaluru) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 5th September </th>
-                  </tr>
-                  <tr>
-                    <td> Dixon Lawrence D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Demian Antony D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 6th September </th>
-                  </tr>
-                  <tr>
-                    <td> Dylon Patrao's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Karen Quadros's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th September </th>
-                  </tr>
-                  <tr>
-                    <td>Lt. Fabian Peres Bhatt's Birthday (1952) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 14th September </th>
-                  </tr>
-                  <tr>
-                    <td>Lt. Merryl Menezes married Grace Soans (1986) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th September </th>
-                  </tr>
-                  <tr>
-                    <td> Marita Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 16th September </th>
-                  </tr>
-                  <tr>
-                    <td> Dale Patrao's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 17th September </th>
-                  </tr>
-                  <tr>
-                    <td> Rashmi (Peres Bhatt) Pais's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Alphonso Rasquinha's Death Aniversary </td>
-                  </tr>
-                  <tr>
-					       <td></td>
-                  </tr>
-
-
-					       <tr>  
-                  <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 23rd September </th>
-                  </tr>
-                  <tr>
-                    <td> Denson Jolon D'Mello's Birthday </td>
-                  </tr>
-                 <tr>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 24th September </th>
-                  </tr>
-                  <tr>
-                    <td> Mario Pinto's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th September </th>
-                  </tr>
-                  <tr>
-                    <td> Ralph Patrao's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 27th September </th>
-                  </tr>
-                  <tr>
-                    <td> Sonia Monica Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 29th September </th>
-                  </tr>
-                  <tr>
-                    <td> Michael Robert Patrao's Birthday </td>
-                  </tr>
-			             <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 30th September </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Jerome Salvador Rego's Birthday (1900 | Bengaluru) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 3rd October </th>
-                  </tr>
-                  <tr>
-                    <td> Gladwin Gilbert Peres Bhatt wedded Benita D'Souza (2021 | St. Vincient Ferrer Church, Valencia, Mangalore) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 4th October </th>
-                  </tr>
-                  <tr>
-                    <td> Antony Joseph Peres Bhatt's Death Aniversary (2012 | Our lady of Holy Rosary Cemetery, Jeppu, Mangalore) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 7th October </th>
-                  </tr>
-                  <tr>
-                    <td> Nyneshwar Naik's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th October </th>
-                  </tr>
-                  <tr>
-                    <td> Jordan Peris Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 9th October </th>
-                  </tr>
-                  <tr>
-                    <td> Tanya (D'Souza) Lobo's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th October </th>
-                  </tr>
-                  <tr>
-                    <td> Gloria (Peres Bhatt) Serao's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th October </th>
-                  </tr>
-                  <tr>
-                    <td> Charles Emmanuel Noronha's Birthday (1891) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 18th October </th>
-                  </tr>
-                  <tr>
-                    <td> Vineetha D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Micheal Gojer - Susan D'Cunha's Weddding Anniversary </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-			               <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 21st October </th>
-                  </tr>
-                  <tr>
-                    <td> Juliana Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Flavian (Lobo) Peres Bhatt's Birthday </td>
-                  </tr>
-			      <tr>
-                    <td> Blessin Jane Peres's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Desmond - Vinitha D'Mello's Wedding Anniversary. </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 22nd October </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Francis Augustine Rego's Birthday (1891)</td>
-                  </tr>
-                  <tr>
-                    <td> Lt. Elsie Rose Teresa Noronha's Birthday (1925)</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-                  
-                  
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th October </th>
-                  </tr>
-                  <tr>
-                    <td> Desmond Edward D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Anna Joanna Patrao's Death anniversary (1938) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 27th October </th>
-                  </tr>
-                  <tr>
-                    <td> Mercy Patrao's Birthday	(1936)</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 28th October </th>
-                  </tr>
-                  <tr>
-                    <td> Prakash Serao wedded Gloria Peres Bhatt </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                   <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 29th October </th>
-                  </tr>
-                  <tr>
-                    <td> Alison Kate Rebello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 31st October </th>
-                  </tr>
-                  <tr>
-                    <td> Harmon Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Lt. Neville Rego's Birthday (1938) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th November </th>
-                  </tr>
-                  <tr>
-                    <td> Grace (Soans) Menezes's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th November </th>
-                  </tr>
-                  <tr>
-                    <td> Rishika Roopams's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th November </th>
-                  </tr>
-                  <tr>
-                    <td> Martin Antony Rosario Sequeira Kamath's Birthday (1902) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 14th November </th>
-                  </tr>
-                  <tr>
-                    <td> Jerome Salvador Rego wedded Albertina Elizabeth Evelyn D'Souza (1934 | Nungambakam, Madras) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 16th November </th>
-                  </tr>
-                  <tr>
-                    <td> Shoba Jane (Sequeira) Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Dale Patrao's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 18th November </th>
-                  </tr>
-                  <tr>
-                    <td> Dionysius Francis D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Harrold Peres Bhatt's Death Anniversary </td>
-                  </tr>
-                  <tr>
-                    <td> John Gratian Peres Bhatt's Death Anniversary (1967) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-                   <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 24th November </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Merryl Menezes's Birthday (1954) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>                 
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 25th November </th>
-                  </tr>
-                  <tr>
-                    <td> Cosmos Peres Bhatt's Death Anniversary </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-                   <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 3rd December </th>
-                  </tr>
-                  <tr>
-                    <td> Merryl Menezes Death Anniversary (2021) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                   <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 7th December </th>
-                  </tr>
-                  <tr>
-                    <td> Alisha Serao's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 8th December </th>
-                  </tr>
-                  <tr>
-                    <td> Nellie Monica Peres Bhatt's Death Anniversary (2015 | Bengaluru) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 10th December </th>
-                  </tr>
-                  <tr>
-                    <td> Esperensa Monica Peres Bhatt's Death Anniversary (2015 | Manipal, Karnataka.) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 11th December </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Lily Marceline (Pinto) Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Jyothi Maria D'Mello's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 15th December </th>
-                  </tr>
-                  <tr>
-                    <td> Zita (Madtha) Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 16th December </th>
-                  </tr>
-                  <tr>
-                    <td> Jerome Salvador Rego's Death anniversary (1968 | Kulshekar, Mangaluru) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 19th December </th>
-                  </tr>
-                  <tr>
-                    <td> Yvone (Lobo) Pinto's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 20th December </th>
-                  </tr>
-                  <tr>
-                    <td> Chris Nicholas Peres's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 26th December </th>
-                  </tr>
-                  <tr>
-                    <td> Lt. Nancy Rita (Peres Bhatt) D'Mello's Birthday (1938) </td>
-                  </tr>
-                  <tr>
-                    <td> Jacintha Pramila (Monteiro) Peres Bhatt's Birthday </td>
-                  </tr>
-                  <tr>
-                    <td> Jyothsna Winifred Peris Bhatt wedded Arun William D'Souza (2008 | Rosario Cathedral Church, Rosario, Mangalore) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 27th December </th>
-                  </tr>
-                  <tr>
-                    <td> Mukesh wedded Samatha Benedict (2021 | St. Francis Xavier's Cathedral, Bangalore) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-
-                  <tr>
-                    <th align="left" class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500"> 29th December </th>
-                  </tr>
-                  <tr>
-                    <td> Joshua Henry Peris Bhatt wedded Sonia Monica Fernandes (2008 | Our Lady of Miracles Church, Milagres, Mangalore) </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                  </tr>
-
-                  
-                </table>
+                     <div class="myriad fw-light text-base lh-lg mb-1 text-efefef" data-aos="fade-up" data-aos-duration="500">
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" ><br><br>
+<div class="grid-container">
+                   <table id="myTable">
+                   <tr class="header">    
+
+                 
+<tr><td bgcolor="#ff8000">January </td></tr>
+<tr><td><font color="gold">1st January:</font> Juliet D'Mello 's Birthday </td></tr>
+<tr><td><font color="gold">1st January:</font> Vandana (Carlo) D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">4th January:</font> Marvin Coelho's Birthday </td></tr>
+<tr><td> <font color="gold">5th January:</font> Lavina (D'Souza) Peres's Birthday </td></tr>
+<tr><td> <font color="gold">6th January:</font> Jerome Augustine Peres Bhatt wedded Joyce Rebello </td></tr>
+<tr><td> <font color="gold">6th January:</font> Joseph Antony Peres Bhatt wedded  Benedicta Fernandes (1969) </td></tr>
+<tr><td> <font color="gold">6th January:</font> Marina (Pinto) Gaonkar's Birthday </td></tr>
+<tr><td> <font color="gold">7th January:</font> Sheela Emiliana (D'Souza) Peris Bhatt's Birthday (1988 | Soraba, Shimogga)</td></tr>
+<tr><td><font color="gold">7th January:</font> Jonah Aloysius Peris Bhatt wedded Sheela Emiliana D'Souza (2016 | St. Sebastian church, Bendur, Mangalore) </td></tr>
+<tr><td><font color="gold">7th January:</font> Lt. Doris Mary Peres Bhatt's Birthday (1891)</td></tr>
+<tr><td> <font color="gold">8th January:</font> Eric J. F. A. Lobo 's Death Anniversary (2020 | Mangaluru) </td></tr>
+<tr><td><font color="gold">8th January:</font> Keith Jude Rebello wedded Annete Priya D'Mello (2018 | St. Sebastian Church, Bendur, Mangaluru) </td></tr>
+<tr><td> <font color="gold">9th January:</font> Basil Gration D'Mello's Death Anniversary (2006 | Modankap, Bantwal) </td></tr>
+<tr><td> <font color="gold">10th January:</font> Arun William D'Souza's Birthday </td></tr>
+<tr><td><font color="gold">10th January:</font> Allwyn Lobo wedded Lydia Pinto (1966) </td></tr>
+<tr><td> <font color="gold">12th January:</font> Dencia Jiya D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">18th January:</font> Fr.Julius Rasquinha's Birthday </td></tr>
+<tr><td> <font color="gold">18th January:</font> Tanushri (Pillai) Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">19th January:</font> Rajiv Basil's Death anniversary (1958) </td></tr>
+<tr><td> <font color="gold">23rd January:</font> Mary (Peres Bhatt) Rasquinha's Birthday </td></tr>
+<tr><td><font color="gold">25th January:</font> Alex Rodrigues's Death Anniversary (1996) </td></tr>
+<tr><td> <font color="gold">30th January:</font> Susan (Rasquinha) Quadras's Birthday </td></tr>
+
+
+<tr><td bgcolor="#ff8000"> February </td></tr>
+<tr><td> <font color="gold">2nd February:</font> Dionysius Francis D'Mello wedded Juliet D'Mello </td></tr>
+<tr><td> <font color="gold">2nd February:</font> Lt. Joseph Antony (Joe) Peres Bhatt's Birthday (1939) </td></tr>
+<tr><td> <font color="gold">3rd February:</font> Ronald Pinto's Birthday </td></tr>
+<tr><td> <font color="gold">5th February:</font> Ranee Glaphyra Peres Bhatt's Birthday (1942) </td></tr>
+<tr><td> <font color="gold">8th February:</font> Titus Antony Peres Bhatt wedded Tanushri Pillai (2018 | Holy Rosario Cathedral, Mangalore) </td></tr>
+<tr><td> <font color="gold">9th February:</font> Leena (Crasta) Patrao's Birthday </td></tr>
+<tr><td> <font color="gold">10th February:</font> Lt. Jerome Augustine Peres Bhatt's Birthday (1943) </td></tr>
+<tr><td> <font color="gold">10th February:</font> Allan Lobo wedded Tanya D'Souza </td></tr>
+<tr><td> <font color="gold">11th February:</font> Dr. Peter & Daisy Carmel (D'Mello) Fernandes's Wedding Anniversary </td></tr>
+<tr><td> <font color="gold">11th February:</font> Mahima Fernandes's Birthday </td></tr>               
+<tr><td> <font color="gold">12th February:</font> Peter Fernandes wedded Daisy Carmel D'Mello </td></tr>
+<tr><td> <font color="gold">15th February:</font> Demian Antony D'Mello wedded Vandana Carlo </td></tr>
+<tr><td> <font color="gold">16th February:</font> Deon D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">17th February:</font> Lt. (Sr. Harriet) Irene Josephine Peres Bhatt's Birthday	(1944) </td></tr>
+<tr><td> <font color="gold">21st February:</font> Samuel Pinto's Birthday </td></tr>
+<tr><td> <font color="gold">24th February:</font> Gilbert Philip Peres Bhatt's Death anniversary (1987) </td></tr>
+<tr><td> <font color="gold">24th February:</font> Magdalen Peres Bhatt's Death anniversary (1897) </td></tr>
+<tr><td> <font color="gold">25th February:</font> Lydia (Pinto) Lobo's Death anniversary (2008) </td></tr>
+
+<tr><td bgcolor="#ff8000">March </td></tr>
+<tr><td> <font color="gold">2nd March:</font> Lt. Basil Gration D'Mello's Birthday	(1931)</td></tr>
+<tr><td> <font color="gold">2nd March:</font> Lt. Harrold Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">3rd March:</font> Marian Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">10th March:</font> Benny (Peres Bhatt) Lobo's Death anniversary (1988) </td></tr>
+<tr><td> <font color="gold">13th March:</font> Nayana (Rasquinha) Naik's Birthday </td></tr>
+<tr><td> <font color="gold">13th March:</font> Percival Lobo's Birthday </td></tr>
+<tr><td> <font color="gold">14th March:</font> Charles Emmanuel Noronha's Death anniversary (1950 | Chennai, Tamil Nadu.) </td></tr>
+<tr><td> <font color="gold">15th March:</font> Winifred Lorna (D'Souza) Peres Bhatt's Birthday (1920) </td></tr>
+<tr><td> <font color="gold">17th March:</font> Nicholas John Peres Bhatt's Death anniversary (1922) </td></tr>
+<tr><td> <font color="gold">18th March:</font> Gladson Joseph Peres Bhatt's Birthday (1985) </td></tr>
+<tr><td> <font color="gold">19th March:</font> Lt. Allwyn Lobo's Birthday (1937) </td></tr>
+<tr><td> <font color="gold">21th March:</font> Priestly Ordination of Brian Peres Bhatt, OSB (2002 | Vijayawada, A.P) </td></tr>
+<tr><td> <font color="gold">23rd March:</font> Mercy (Peres Bhatt) Patrao's death Anniversary  (2020) </td></tr>
+
+
+<tr><td bgcolor="#ff8000"> April </td></tr>
+<tr><td> <font color="gold">1st April:</font> Lt. Monica Emerciana (Suares) Peres Bhatt's Birthday (1882) </td></tr>
+<tr><td> 2nd April </td></tr>
+<tr><td> <font color="gold">2nd April:</font> Jude Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">2nd April:</font> Joanna Peres Bhatt's Birthday	(2020)</td></tr>
+<tr><td> <font color="gold">3rd April:</font> Monica Emerciana (Suares) Peres Bhatt's death Anniversary  (1936) </td></tr>
+<tr><td> <font color="gold">5th April:</font> Fabian Peres Bhatt's death Anniversary  (2022 | Our lady of Holy Rosary Cemetery, Jeppu, Mangalore)</td></tr>
+<tr><td> <font color="gold">11th April:</font> Doris Mary Noronha's Death anniversary (1933) </td></tr>
+<tr><td> <font color="gold">13th April:</font> Fr. Brain Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">17th April:</font> Allwyn Lobo's Death anniversary (2007) </td></tr>
+<tr><td> <font color="gold">19th April:</font> Jyothsna Winifred (D'Souza) Peres Bhatt's Birthday (1981)</td></tr>
+<tr><td> <font color="gold">19th April:</font> Gladwin Gilbert Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">21st April:</font> Letita Lobo's Birthday (1899) </td></tr>
+<tr><td> <font color="gold">28th April:</font> Bennet Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">30th April:</font> Ronald Pinto wedded Blossom Peres Bhatt</td></tr>
+
+<tr><td bgcolor="#ff8000"> May </td></tr>
+<tr><td> <font color="gold">1st May:</font> Lt. Gilbert Philip Peres Bhatt's Birthday (1915) </td></tr>
+<tr><td> <font color="gold">2nd May:</font> Sr. Harriet's (Irene Josephine Peres Bhatt) death Anniversary (2012)</td></tr>
+<tr><td> <font color="gold">2nd May:</font> Alex Rodrigues wedded Philomena (1960) </td></tr>
+<tr><td> <font color="gold">4th May:</font> Aavin lobo wedded Rainal D'Souza </td></tr>
+<tr><td> <font color="gold">4th May:</font> Nellie Monica lobo's Birthday (1914) </td></tr>
+<tr><td> <font color="gold">4th May:</font> Ranee Glaphyra Norhona's death Anniversary (2020 | Bengaluru) </td></tr>
+<tr><td> <font color="gold">4th May:</font> Martin Antony Rosario Sequeira Kamath's death Anniversary (1982 | Kolkata, West Bengal) </td></tr>
+<tr><td> <font color="gold">8th May:</font> Bennet Peres Bhatt wedded Jacintha Pramila Monterio	(2019 | Holy Rosario Cathedral, Mangalore) </td></tr>
+<tr><td> <font color="gold">11th May:</font> Lt. Fabian Peres Bhatt wedded Flavian Lobo (1981 | Rosario Cathedral, Mangalore) </td></tr>
+<tr><td> <font color="gold">13th May:</font> Lt. Deral Robert D'Mello's Birthday (1966) </td></tr>
+<tr><td> <font color="gold">14th May:</font> Jaylon Simon Peres Bhatt's Birthday	(2018 | Shimogga)</td></tr>
+<tr><td> <font color="gold">19th May:</font> Mario Pinto wedded Rishika Rupam </td></tr>
+<tr><td> <font color="gold">19th May:</font> Gilbert Philip Peres Bhatt wedded Winnifred Lorna D'Souza (1941) </td></tr>
+<tr><td> <font color="gold">19th May:</font> Anthony Noronha's Death anniversary (2006 | Bengaluru) </td></tr>
+<tr><td> <font color="gold">20th May:</font> Joel Gaonkar's Birthday </td></tr>
+<tr><td> <font color="gold">24th May:</font> Maxium Barboza wedded Anita </td></tr>
+<tr><td> <font color="gold">25th May:</font> Maya Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">26th May:</font> Joyce (Rebello) Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">26th May:</font> Aileen Jean Dsouza's Birthday </td></tr>
+<tr><td> <font color="gold">27th May:</font> Mabel (Pinto) Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">27th May:</font> Lawrence Peres Bhatt wedded Juliana D'Cunha (1980 | Our Lady of Immaculate Conception, Urwa, Mangalore) </td></tr>
+<tr><td> <font color="gold">28th May:</font> Blossom (Pinto) Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">28th May:</font> Aedan John Dsouza's Birthday </td></tr>
+<tr><td> <font color="gold">29th May:</font> Joshua Henry Peris Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">29th May:</font> Ulrica Pinto's Birthday </td></tr>
+<tr><td> <font color="gold">30th May:</font> Delrin D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">30th May:</font> Denzil Felix D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">31st May:</font>Jonah Aloysius Peris Bhatt's Birthday  (1985)</td></tr>
+
+<tr><td bgcolor="#ff8000"> June </td></tr>
+<tr><td> <font color="gold">2nd June:</font> Samatha Benedict's Birthday </td></tr>
+<tr><td> <font color="gold">2nd June:</font> Nancy Rita D'Mello's Death Anniversary (2006 | Modankap, Bantwal) </td></tr>
+<tr><td> <font color="gold">10th June:</font> Merwin Pais's Birthday </td></tr>
+<tr><td> <font color="gold">10th June:</font> Lt. Neville Rego's Death Anniversary (2010) </td></tr>
+<tr><td> <font color="gold">12th June:</font> Winston Pais's Birthday </td></tr>
+<tr><td> <font color="gold">16th June:</font> Deral Robert D'Mello's Death anniversary (2016 | Modankap, Bantwal) </td></tr>
+<tr><td> <font color="gold">16th June:</font> Grathin's Birthday </td></tr>
+<tr><td> <font color="gold">17th June:</font> Lt. Anna Joanna Patrao's Birthday (1883) </td></tr>
+<tr><td> <font color="gold">19th June:</font> Titus Antony Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">21st June:</font> Lt. Benny (Peres Bhatt) Lobo's Birthday (1913) </td></tr>
+<tr><td> <font color="gold">23rd June:</font> Delmon D'Mello's Birthday </td>
+<tr><td> <font color="gold">25th June:</font> Lt. Cosmos Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">25th June:</font> Lt. Francis Augustine Rego's Death anniversary (1949) </td></tr>
+<tr><td> <font color="gold">27th June:</font> Derrick John D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">28th June:</font> Prathik Peres Bhatt's Birthday </td></tr>
+
+<tr><td bgcolor="#ff8000"> July </td></tr>
+<tr><td> <font color="gold">5th July:</font> Daisy Carmel D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">8th July:</font> Mehul Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">8th July:</font> Lt. Alphonso Joseph Rasquinha's birthday </td></tr>
+<tr><td> <font color="gold">10th July:</font> Jerome Augustine Peres Bhatt's death Anniversary (2012 | St. Anthony Church Cemetery, Ujire, Karnataka) </td></tr>
+<tr><td> <font color="gold">10th July:</font> Michael Gojer's Birthday </td></tr>
+<tr><td> <font color="gold">12th July:</font> John Gilbert Bernard Rego's Birthday (1897) </td></tr>
+<tr><td> <font color="gold">15th July:</font> Lt. Henry Pinto's Birthday </td></tr>
+<tr><td> <font color="gold">23rd July:</font> Daniel Pinto's Birthday </td></tr>
+<tr><td> <font color="gold">25th July:</font> Winnifred Lorna (D'Souza) Peres Bhatt's Death anniversary (1996) </td></tr>
+<tr><td> <font color="gold">28th July:</font> Celine Rego's Death anniversary (2009 | Mumbai) </td></tr>
+<tr><td> <font color="gold">28th July:</font> Lt. Alex Rodrigues's Birthday  (1928) </td></tr>
+<tr><td> <font color="gold">28th July:</font> Elsie Rose Teresa Noronha's Death anniversary  (2018 | Urwa Cemetery, Mangalore) </td></tr>
+<tr><td> <font color="gold">29th July:</font> Vernon Peres Bhatt's Birthday </td></tr>
+
+<tr><td bgcolor="#ff8000"> August </td></tr>
+<tr><td> <font color="gold">6th August:</font> Anita (Peres Bhatt) Barboza's Birthday </td></tr>
+<tr><td> <font color="gold">7th August:</font> Lt. Lydia (Pinto) Lobo's Birthday (1941) </td></tr>
+<tr><td> <font color="gold">8th August:</font> Dominic John D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">9th August:</font> Lawrence Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">9th August:</font> Denika D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">10th August:</font> Prakash Serao's Birthday </td></tr>
+<tr><td> <font color="gold">10th August:</font> Winnifred (Sequeira) Peres Bhatt's Death Anniversary </td></tr>
+<tr><td> <font color="gold">11th August:</font> Lt. Celine Pinto's Birthday </td></tr>
+<tr><td> <font color="gold">13th August:</font> Sr. Sabitha Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">13th August:</font> Maxium Barboza's Birthday </td></tr>
+<tr><td> <font color="gold">13th August:</font> John Gratian Peres Bhatt's Birthday (1904) </td></tr>
+<tr><td> <font color="gold">14th August:</font> Dexia D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">25th August:</font> Ignatius Cajetan Peres Bhatt's Death anniversary (1877) </td></tr>
+<tr><td> <font color="gold">26th August:</font> Sangeetha Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">31st August:</font> Magdalen D'Souza's Birthday (1829) </td></tr>
+
+<tr><td bgcolor="#ff8000"> September </td></tr>
+<tr><td> <font color="gold">2nd September:</font> Charles Rego's Birthday (1935 | Bengaluru) </td></tr>
+<tr><td> <font color="gold">5th September:</font> Dixon Lawrence D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">5th September:</font> Demian Antony D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">6th September:</font> Dylon Patrao's Birthday </td></tr>
+<tr><td> <font color="gold">6th September:</font> Karen Quadros's Birthday </td></tr>
+<tr><td> <font color="gold">11th September:</font>Lt. Fabian Peres Bhatt's Birthday (1952) </td></tr>
+<tr><td> <font color="gold">14th September:</font>Lt. Merryl Menezes married Grace Soans (1986) </td></tr>
+<tr><td> <font color="gold">15th September:</font> Marita Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">16th September:</font> Dale Patrao's Birthday </td></tr>
+<tr><td> <font color="gold">17th September:</font> Rashmi (Peres Bhatt) Pais's Birthday </td></tr>
+<tr><td> <font color="gold">17th September:</font> Alphonso Rasquinha's Death Aniversary </td></tr>
+<tr><td> <font color="gold">23rd September:</font> Denson Jolon D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">24th September:</font> Mario Pinto's Birthday </td></tr>
+<tr><td> <font color="gold">25th September:</font> Ralph Patrao's Birthday </td></tr>
+<tr><td> <font color="gold">27th September:</font> Sonia Monica Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">29th September:</font> Michael Robert Patrao's Birthday </td></tr>
+<tr><td> <font color="gold">30th September:</font> Lt. Jerome Salvador Rego's Birthday (1900 | Bengaluru) </td></tr>
+
+<tr><td bgcolor="#ff8000"> October </td></tr>
+<tr><td> <font color="gold">3rd October:</font> Gladwin Gilbert Peres Bhatt wedded Benita D'Souza (2021 | St. Vincient Ferrer Church, Valencia, Mangalore) </td></tr>
+ <tr><td> <font color="gold">4th October:</font> Antony Joseph Peres Bhatt's Death Aniversary (2012 | Our lady of Holy Rosary Cemetery, Jeppu, Mangalore) </td></tr>
+<tr><td> <font color="gold">7th October:</font> Nyneshwar Naik's Birthday </td></tr>
+<tr><td> <font color="gold">8th October:</font> Jordan Peris Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">9th October:</font> Tanya (D'Souza) Lobo's Birthday </td></tr>
+<tr><td> <font color="gold">10th October:</font> Gloria (Peres Bhatt) Serao's Birthday </td></tr>
+<tr><td> <font color="gold">15th October:</font> Charles Emmanuel Noronha's Birthday (1891) </td></tr>
+<tr><td> <font color="gold">18th October:</font> Vineetha D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">18th October:</font> Micheal Gojer - Susan D'Cunha's Weddding Anniversary </td></tr>
+<tr><td> <font color="gold">21st October:</font> Juliana Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">21st October:</font> Flavian (Lobo) Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">21st October:</font> Blessin Jane Peres's Birthday </td></tr>
+<tr><td> <font color="gold">21st October:</font> Desmond - Vinitha D'Mello's Wedding Anniversary. </td></tr>
+<tr><td> <font color="gold">22nd October:</font> Lt. Francis Augustine Rego's Birthday (1891)</td></tr>
+<tr><td> <font color="gold">22nd October:</font> Lt. Elsie Rose Teresa Noronha's Birthday (1925)</td></tr>
+<tr><td> <font color="gold">25th October:</font> Desmond Edward D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">25th October:</font> Anna Joanna Patrao's Death anniversary (1938) </td></tr>
+<tr><td> <font color="gold">27th October:</font> Mercy Patrao's Birthday	(1936)</td></tr>
+<tr><td> <font color="gold">28th October:</font> Prakash Serao wedded Gloria Peres Bhatt </td></tr>
+<tr><td> <font color="gold">29th October:</font> Alison Kate Rebello's Birthday </td></tr>
+<tr><td> <font color="gold">31st October:</font> Harmon Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">31st October:</font> Lt. Neville Rego's Birthday (1938) </td></tr>
+
+<tr><td bgcolor="#ff8000"> 8th November </td></tr>
+<tr><td> <font color="gold">8th November:</font> Grace (Soans) Menezes's Birthday </td></tr>
+<tr><td> <font color="gold">10th November:</font> Rishika Roopams's Birthday </td></tr>
+<tr><td> <font color="gold">11th November:</font> Martin Antony Rosario Sequeira Kamath's Birthday (1902) </td></tr>
+<tr><td> <font color="gold">14th November:</font> Jerome Salvador Rego wedded Albertina Elizabeth Evelyn D'Souza (1934 | Nungambakam, Madras) </td></tr>
+<tr><td> <font color="gold">16th November:</font> Shoba Jane (Sequeira) Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">16th November:</font> Dale Patrao's Birthday </td></tr>
+<tr><td> <font color="gold">18th November:</font> Dionysius Francis D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">18th November:</font> Harrold Peres Bhatt's Death Anniversary </td></tr>
+<tr><td> <font color="gold">18th November:</font> John Gratian Peres Bhatt's Death Anniversary (1967) </td></tr>
+<tr><td> <font color="gold">24th November:</font> Lt. Merryl Menezes's Birthday (1954) </td></tr>               
+<tr><td> <font color="gold">25th November:</font> Cosmos Peres Bhatt's Death Anniversary </td></tr>
+
+<tr><td bgcolor="#ff8000"> December </td></tr>
+<tr><td> <font color="gold">3rd December:</font> Merryl Menezes Death Anniversary (2021) </td></tr>
+<tr><td> <font color="gold">7th December:</font> Alisha Serao's Birthday </td></tr>
+<tr><td> <font color="gold">8th December:</font> Nellie Monica Peres Bhatt's Death Anniversary (2015 | Bengaluru) </td></tr>
+<tr><td> <font color="gold">10th December:</font> Esperensa Monica Peres Bhatt's Death Anniversary (2015 | Manipal, Karnataka.) </td></tr>
+<tr><td> <font color="gold">11th December:</font> Lt. Lily Marceline (Pinto) Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">11th December:</font> Jyothi Maria D'Mello's Birthday </td></tr>
+<tr><td> <font color="gold">15th December:</font> Zita (Madtha) Peres Bhatt's Birthday </td></tr>
+<tr><td>  <font color="gold">16th December:</font>Jerome Salvador Rego's Death anniversary (1968 | Kulshekar, Mangaluru) </td></tr>
+<tr><td> <font color="gold">19th December:</font> Yvone (Lobo) Pinto's Birthday </td></tr>
+<tr><td> <font color="gold">20th December:</font> Chris Nicholas Peres's Birthday </td></tr>
+<tr><td> <font color="gold">26th December:</font> Lt. Nancy Rita (Peres Bhatt) D'Mello's Birthday (1938) </td></tr>
+<tr><td> <font color="gold">26th December:</font> Jacintha Pramila (Monteiro) Peres Bhatt's Birthday </td></tr>
+<tr><td> <font color="gold">26th December:</font> Jyothsna Winifred Peris Bhatt wedded Arun William D'Souza (2008 | Rosario Cathedral Church, Rosario, Mangalore) </td></tr>
+<tr><td> <font color="gold">27th December:</font> Mukesh wedded Samatha Benedict (2021 | St. Francis Xavier's Cathedral, Bangalore) </td></tr>
+<tr><td> <font color="gold">29th December:</font> Joshua Henry Peris Bhatt wedded Sonia Monica Fernandes (2008 | Our Lady of Miracles Church, Milagres, Mangalore) </td></tr>
+
+</table>
                         </div>
                       
                     </div>
@@ -2325,9 +932,22 @@ function topFunction() {
  
         
         
-        <div class="spectrum-background"><br><br> </div>
+    <!--    <div class="spectrum-background"><br><br> </div>    ---->
 
 <!-------------->
+<br><br><br>
+
+<div style="background-color:black;color:white;padding:10px;" id="contact"> 
+
+<strong><h3>&nbsp; &nbsp; &nbsp; Contact Me:</h3></strong></div>
+
+<div class="spectrum-background"><br><br> </div>
+
+<div style="background-color:none;padding:0px 0px 0px">
+<p class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
+
+
+
 
 
 <!-- 👇️ will load page content in this div  
@@ -2344,11 +964,19 @@ box.innerHTML =
 
 </div>          -->
 
+
+
+
+
+
+
 <!------feedback---->
 
-<div style="background-color:none;padding:30px 30px 30px">
+<div style="background-color:none;padding:30px 30px 30px" >
 
-Please message me if you have any query or simply want to say hello, <strong>I’d love to hear from you!</strong><br>Fill the form below.<br>
+<p class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
+
+Please message me if you have any query or simply want to say hello, <strong>I’d love to hear from you!</strong><br>Fill the form below.<br><p>
         
    <div class="formcarry-container">
 
@@ -2361,22 +989,35 @@ Please message me if you have any query or simply want to say hello, <strong>I�
         <input type="email" id="email" name="email" required />
 
         <label for="message">Your Message</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <textarea name="message" id="message" cols="10" rows="10"></textarea>
 
         <button type="submit" name="btnSubmit" onclick="submitForm()">Send</button>
 
       </form>
     </div>
-          <br><br><br>                   
+          <br><br><br>  
+
+
+
+
+
+
 
 <!------warning---->
-<div style="background-color:black;color:white;padding:10px">&nbsp; &nbsp; <strong>Attention:</strong></div>
-<div style="background-color:none;padding:30px 30px 30px">
-
-The <strong>Misuse of data and images </strong> from the website is not permitted. Please refrain from any unauthorized use of the data and images in any way that may violate the term of use.<br><br>
 
 
-       
+<p class="myriad font-medium lh-lg text-lg mt-3 text-efefef" data-aos="fade-up" data-aos-duration="500">
+
+<div style= background-color:#195190ff;color:#a2a2a1ff;padding:5px;>
+&nbsp; &nbsp; 
+<strong><h3>Attention!</h3></strong></div>
+
+<div style= background-color:#e6e6e6;color:#195190ff;padding:10px; >
+<br>The <strong>Misuse of data and images </strong> from the website is not permitted. Please refrain from any unauthorized use of the data and images in any way that may violate the term of use.<br><br><p></div>
+
+
+
+
        
 <!-------------------Footer---------------------->        
         <div class="footer">
@@ -2401,21 +1042,16 @@ The <strong>Misuse of data and images </strong> from the website is not permitte
 </div>    </div> 
 
   
-
-
-
-
-
-
-
-
-
-
+<!--------------------------------->
 
 
 </body>
-
 </html>
+
+
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -2467,3 +1103,6 @@ The <strong>Misuse of data and images </strong> from the website is not permitte
 
 </script>
 </body>
+
+
+
