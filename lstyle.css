@@ -1,0 +1,39 @@
+
+
+h1, p {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+font-weight:bold;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 2.8rem;
+font-weight:normal;
+}
+p:last-child {
+  margin-bottom: -6px;
+}
+
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+
+ 
+}

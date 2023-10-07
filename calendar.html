@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>calendar</title>
+
+
+
+<!------event calender--------->
+<script type="text/javascript" src="event.js">
+var todaybg = '#99cccc'; // current selected date background
+var textclr = '#ffffff'; // text colour
+var linkclr = '#ffffff'; // link text colour
+var noMessage = 'No event messages to display for today';
+dA[x++] = "00000101 New Year";
+</script>
+
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1827&q=80");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+/*  background-color: rgb(0,0,0); /* Fallback color */
+/*  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+/*  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;    */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+
+
+</head>
+<body>
+<br><br>
+<div class="bg-image"></div>
+<div class="bg-text">
+<div style="image-background: url(" ");   filter: blur(8px); -webkit-filter: blur(8px);>
+<!----calendar---->
+    <center><div id="calendar" style="color: #ffffff; font-family: "Nunito", sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; " ></div></center>  <br> <br>
+
+
+
+</body>
+</html>
