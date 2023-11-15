@@ -5,73 +5,75 @@
 <title>calendar</title>
 
 
+<!-----right click disabled------->
+
+<script>
+document.addEventListener('contextmenu', function(e){
+e.preventDefault();
+});
+
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+    if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+     return false;
+  }
+}
+</script>   
+
+<!------------>
+
+
 
 <!------event calender--------->
 <script type="text/javascript" src="event.js">
 var todaybg = '#99cccc'; // current selected date background
 var textclr = '#ffffff'; // text colour
-var linkclr = '#ffffff'; // link text colour
+var linkclr = '#ff9999'; // link text colour
 var noMessage = 'No event messages to display for today';
 dA[x++] = "00000101 New Year";
 </script>
 
 
+
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
-}
 
-* {
-  box-sizing: border-box;
-}
 
-.bg-image {
-  /* The image used */
-  background-image: url("https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1827&q=80");
-  
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-  /* Full height */
-  height: 100%; 
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+        .background { 
+            position: absolute; 
+            height: 100%; 
+            width: 100%; 
+            background-image: url( 
+"https://c4.wallpaperflare.com/wallpaper/203/203/693/sunset-drawing-animals-lake-wallpaper-preview.jpg"); 
+          <!---  background-size: cover; --->
+            background-position: center; 
+            filter: blur(10px); 
+            z-index: -1;
+            opacity: 1; 
 
-/* Position text in the middle of the page/image */
-.bg-text {
-/*  background-color: rgb(0,0,0); /* Fallback color */
-/*  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-/*  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;    */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
+        } 
+
 </style>
-
 
 </head>
 <body>
+<div class="background"></div>
 <br><br>
-<div class="bg-image"></div>
-<div class="bg-text">
-<div style="image-background: url(" ");   filter: blur(8px); -webkit-filter: blur(8px);>
 <!----calendar---->
-    <center><div id="calendar" style="color: #ffffff; font-family: "Nunito", sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; " ></div></center>  <br> <br>
+    <center><div id="calendar" style="color: #FAF9C9; font-family: "Nunito", sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; z-index=1; " ></div></center> 
 
 
 
