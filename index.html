@@ -68,7 +68,7 @@ document.onkeydown = function(e) {
 
         #dialogText {
             color: white;
-            background-color: #333333;
+           background-color: #42512b;
         }
         
         #dialogWrap {
@@ -92,10 +92,10 @@ document.onkeydown = function(e) {
             margin: 5px;
             border: solid #AAAAAA 1px;
             border-radius: 10px;
-           box-shadow: 3px 3px 5px 3px #AAAAAA;
+           box-shadow: 3px 3px 5px 3px #6a765b;
             margin-left: auto;
             margin-right: auto;
-            background-color: #FFFFFF;
+            background-color: rgba(66,81,43,0.5);
             overflow: hidden;
             text-align: left;
         }
@@ -104,7 +104,7 @@ document.onkeydown = function(e) {
         }
         #passArea {
             padding: 20px 30px;
-            background-color: white;
+         //   background-color: white;
         }
         #passArea > * {
             margin: 5px auto;
@@ -126,11 +126,11 @@ document.onkeydown = function(e) {
         }
         
         #invalidPass {
-            color: red;
+            color: #Fffea4;
         }
         
         #success {
-            color: green;
+            color: #D3ffa4;
         }
         
         #submitPass {
@@ -176,12 +176,12 @@ document.onkeydown = function(e) {
 
 .bg-image {
   /* The image used */
-  background-image: url("https://www.technocrazed.com/wp-content/uploads/2015/12/Tree-wallpaper-to-use-as-background-1.jpg");
+  background-image: url("https://wemergesystems.com/wp-content/uploads/2021/08/change-is-possible-teen-anxiety-wemerge-systems.jpg");
   
   /* Add the blur effect */
   filter: blur(3px);
-  -webkit-filter: blur(3px);
-opacity: 0.2;
+  -webkit-filter: blur(10px);
+opacity: 1;
   
   /* Full height */
   height: 100%; 
@@ -219,13 +219,13 @@ opacity: 0.2;
               
                 <div id="dialogText">Peres Bhatt Generation Tree</div>
                 <div id="passArea">
-                    <p id="passwordPrompt" style="text-align:left;">Password</p>
+                    <p id="passwordPrompt" style="text-align:left; color: white;">Password</p>
                     <input id="pass" type="password" name="pass" autofocus>
                     <div>
                         <span id="messageWrapper">
                             <span id="invalidPass" class="error">Sorry, please try again.</span>
                             <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
-                            <span id="success" class="notifyText">Success!</span>
+                            <span id="success" class="notifyText">Please wait, Loading site...</span>
                             &nbsp;
                         </span>
                         <button id="submitPass" type="button">Submit</button>
