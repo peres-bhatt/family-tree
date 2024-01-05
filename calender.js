@@ -15,6 +15,7 @@ var dA = new Array(); var x = 0;
 dA[x++] =  "00000101  <h5>JULIET D'MELLO's Birthday <br><br>VANDANA D'MELLO (CARLO)'s  Birthday <br><br>"; 
 dA[x++] =  "00000102  <h5>CECIL GREGORY CHRISTOPHER - RANEE GLAPHYRA (PERES BHATT) NORONHA's wedding anniversary <br><br>";
 dA[x++] =  "00000104  <h5>MARVIN COELHO's Birthday <br><br>";
+dA[x++] =  "00000105  <h5>LAVINA PERES BHATT (D'SOUZA)'s Birthday <br><br>";
 dA[x++] = "00000106  <h5>JEROME AUGUSTINE - JOYCE PERES BHATT wedding anniversary<br><br> JOSEPH ANTONY - BENEDICTA (FERNANDES) PERES BHATT's wedding anniversary (1969)<br><br>  MARINA GAONKAR (PINTO)'s Birthday <br><br>";
 dA[x++] = "00000107  <h5>SHEELA EMILIANA PERIS BHATT (D'SOUZA)'s Birthday (1988) <br><br> JONAH ALOYSIUS - SHEELA EMILIANA (D'SOUZA) PERES BHATT's Wedding Anniversary (2016, St. Sebastian Church, Bendur, Mangalore) <br><br>DORIS MARY (PERES BHATT) NORONHA(32)'s Birthday (1901) <br><br>";
 dA[x++] = "00000108  <h5>ERIC J.F.A LOBO(66)'s Death Anniversary (2020) <br><br> KEITH JUDE - ANNETE PRIYA (D'MELLO) REBELLO's Wedding Anniversary (2018, St. Sebastian Church, Bendur, Mangaluru) <br><br>";
