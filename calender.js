@@ -13,7 +13,7 @@ var dA = new Array(); var x = 0;
 // first 8 characters in ccyymmdd format for single date events
 // first 8 characters in 0000mmdd format for every year events
 dA[x++] =  "00000101  <h5>JULIET D'MELLO's Birthday <br><br>VANDANA D'MELLO (CARLO)'s  Birthday <br><br>"; 
-dA[x++] =  "00000102  <h5>CECIL GREGORY CHRISTOPHER - RANEE GLAPHYRA (PERES BHATT) NORONHA's wedding anniversary <br><br>";
+dA[x++] =  "00000102  <h5>CECIL GREGORY CHRISTOPHER - RANEE GLAPHYRA (PERES BHATT) NORONHA's wedding anniversary <br><br> LORNA LOBO (CUNHA)'s Death Anniversary (2025 | Resurrection Church, Kalpalli, Bangalore) <br><br>";
 dA[x++] =  "00000104  <h5>MARVIN COELHO's Birthday <br><br>";
 dA[x++] =  "00000105  <h5>LAVINA PERES BHATT (D'SOUZA)'s Birthday <br><br>";
 dA[x++] = "00000106  <h5>JEROME AUGUSTINE - JOYCE PERES BHATT wedding anniversary<br><br> JOSEPH ANTONY - BENEDICTA (FERNANDES) PERES BHATT's wedding anniversary (1969)<br><br>  MARINA GAONKAR (PINTO)'s Birthday <br><br>";
@@ -183,7 +183,7 @@ dA[x++] = "00001118  <h5>DIONYSIUS FRANCIS D'MELLO's Birthday <br><br> HARROLD P
 dA[x++] = "00001120  <h5> DERRICK JOHN D'MELLO(63)'s, Death Anniversary (2024) <br><br>";
 dA[x++] = "00001121  <h5>MARGARET (PINTO) PATRAO's (2015. Bendore, Mangaluru)<br><br>NATHALIA PERES BHATT(1)'s Birthday (1864)<br><br>";
 dA[x++] = "00001122  <h5>GRATIAN ALEXIS PINTO(79)'s Birthday (1911)<br><br>";
-dA[x++] = "00001124  <h5>MERRYL MENEZES(67)'s Birthday  (1954)<br><br>";
+dA[x++] = "00001124  <h5>MERRYL MENEZES(67)'s Birthday  (1954)<br><br> Lorna Lobo (Cunha)(86)'s Birthday  (1938) <br><br>";
 dA[x++] = "00001125  <h5>COSMOS PERES BHATT's Death Anniversary <br><br>";
 dA[x++] = "00001129  <h5>KEONA LEANNE LOBO's Birthday <br><br>";
 dA[x++] = "00001201  <h5>LEO PERES BHATT - JOANNA MACHADO's Wedding Anniversary (1893, Urwa, Mangaluru) <br><br>";
